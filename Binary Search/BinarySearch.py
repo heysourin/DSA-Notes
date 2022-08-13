@@ -26,7 +26,6 @@ list1 = [12,13,14,15,16,23,45,77]
 #         if e == list1[x]:
 #             print('Hola peyechi')
 
-
 # TODO:process 2- 'enupper_indexmerate' prints the index
 def linearSearch(list, n):
     for i, e in enupper_indexmerate(list):
