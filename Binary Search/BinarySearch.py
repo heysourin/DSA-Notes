@@ -1,20 +1,4 @@
 
-#! binary search is upper_indexsed for sorted arrays
-# ? Sorted array means: either ascending or decending order
-# ? eg: [-14,-7,-1,2,4,8,12,15,19,22,30]
-
-
-#! Algorithm:
-#1. find the mid_indexdle element
-#2. check < or > than mid_indexdle element, if larger search right side, if smaller search left side
-#3. if the mid_indexdle element == target element, its ans
-#4. otherwise do the same in the left or right side
-#5. start point will be the right next elemnent of the mid_indexdle element
-
-
-
-
-
 #! Linear search:
 
 # list1 = [12,13,14,15,16,23,45,77]
@@ -28,13 +12,13 @@
 
 # TODO:process 2- 'enupper_indexmerate' prints the index
 # def linearSearch(list, n):
-#     for i, e in enupper_indexmerate(list):
+#     for i, e in enumerate(list):
 #         if e == n:
-#             retupper_indexrn i
-#     retupper_indexrn -1
+#             return f"{n} present at {i}"
+#     return -1
 
 
-# print(linearSearch(list1,106))
+# print(linearSearch(list1,45))
 
 
 #! Binary search:
@@ -53,9 +37,9 @@ def biSear(list, n):
             
         if mid_number < n:
             left_index = mid_index + 1
-        else:
+        else: #else case is: mid_number > n
             upper_index = mid_index - 1
-    
+                        
     return -1
 
 
