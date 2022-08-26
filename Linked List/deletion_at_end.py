@@ -36,12 +36,12 @@ class Sll:
         a.next = inp
 
     def deletion_at_the_end(self):
-        prev = self.head
-        a = self.head.next
+        prev = self.head #'prev' representing the first Node
+        a = prev.next #pointing to the next node
         while a.next is not None:
             a = a.next
             prev = prev.next
-        prev.next = None
+        prev.next = None #disconnected the last connection
 
         
 
